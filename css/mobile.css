@@ -1,0 +1,122 @@
+/* Mobile devices */
+@media (min-width:0px) and (max-width:980px) {
+
+  /** general styles **/
+
+  a.btn {
+    padding: 10px;
+    font-size:17px;
+  }
+
+  /** header **/
+  header#main-header {
+    padding:10px;
+    height: 80px;
+  }
+
+  div.main-header-logo {
+    background-size: contain;
+    width: 210px;
+    height: 45px;
+    background-position: top center;
+  }
+
+  div.main-header-tagline {
+    font-size: 18px;
+  }
+
+  #popcorn {
+    margin-top: 80px;
+  }
+
+  /** main section **/
+  #main-view .container {
+    min-height: 800px;
+  }
+
+  div.calendar-header nav div.title {
+    font-size: 18px;
+    line-height: 45px;
+  }
+
+  div.calendar-header nav div.title span {
+    line-height: 22px;
+  }
+
+  /** calendar month view **/
+
+  div.calendar-month-view div.day a {
+    min-height: 64px;
+  }
+
+  div.calendar-month-view div.day-title {
+    font-size: 15px; 
+  }
+
+  /** calendar week view **/
+
+  div.calendar-week-view a.week-day ul.movies li {
+    width: 80px;
+  }
+
+  div.calendar-week-view a.week-day ul.movies li img {
+    max-width: 100%;
+  }
+
+  /** calendar day view **/
+
+
+  div.calendar-day-view ul.day-view-movie-list li div.poster {
+    width:100px;
+  }
+
+  div.calendar-day-view ul.day-view-movie-list li div.details {
+    margin-left: 120px;
+  }
+
+  div.calendar-day-view ul.day-view-movie-list li div.poster img {
+    max-width: 100%;
+  }
+
+  div.calendar-day-view ul.day-view-movie-list li div.view-movie {
+    position: static;
+  }
+
+  div.calendar-day-view ul.day-view-movie-list li div.view-movie a {
+    margin-top: 10px;
+    width:100%;
+  }
+
+  div.calendar-day-view ul.day-view-movie-list li div.poster div.no-image {
+    width: 100px;
+    height: 180px;
+  }
+}
+
+
+/** smaller mobile devices and phones **/
+@media (min-width:0px) and (max-width:500px) {
+  /** header **/
+
+ 
+  header#main-header {
+    padding:10px 0;
+    height: 80px;
+  }
+
+  #popcorn {
+    margin-top: 80px;
+  }
+ 
+ /** main section **/
+  div.main-header-logo {
+    position: static;
+    margin: 0 auto;
+  }
+
+  div.main-header-tagline {
+    position: static;
+    font-size: 18px;
+    text-align: center;
+  }
+}

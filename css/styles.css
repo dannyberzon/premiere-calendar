@@ -1,0 +1,379 @@
+/** General element styles **/
+
+/** reset box sizing **/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/** clear fix **/
+.group {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  color: #333;
+  padding:0;
+  margin:0;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+a.btn {
+  display:inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  padding:15px;
+  text-align: center;  
+  border:1px solid #999;
+  background-color: #fcfcfc;
+}
+
+a.btn:hover {
+  background-color: #eee;
+  border-color: #333;
+}
+
+div#spinner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+/** Main Header. fixed top **/
+
+header#main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #0090ff;
+  height:110px;
+  padding:15px;
+}
+
+div.main-header-logo {
+  position: absolute;
+  background: url('../images/logo.svg') top left no-repeat transparent;
+  width: 500px;
+  height: 80px;
+  left: 0px;
+}
+
+div.main-header-logo span {
+  display: none;
+}
+
+div.main-header-tagline {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  color:#eee;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: right;
+}
+
+/** popcorn image **/
+
+#popcorn {
+  margin-top:100px;
+  background: url(../images/popcorn.jpg) top left no-repeat;
+  background-size: cover;
+  height:150px;
+}
+
+/** main section **/
+
+#main-view .container {
+  background-color: #fff;
+  padding: 20px;
+  min-height:1000px;
+}
+
+
+#calendar-view-select {
+  height: 60px;
+}
+
+#calendar-view-select nav ul {
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0 -5px;
+}
+
+#calendar-view-select nav ul li {
+  float: left;
+  width: 33.3333%;
+  padding: 0 5px;
+}
+
+#calendar-view-select nav ul li a.btn {
+  width: 100%;
+}
+
+#calendar-view-select nav ul li.active a.btn {
+  background-color: #eee;
+  border-color: #333;  
+}
+
+div.calendar-header {
+  margin-top: 20px;
+}
+
+div.calendar-header nav {
+  width: 100%;
+}
+
+div.calendar-header nav div {
+  float: left;
+}
+
+div.calendar-header nav div.next {
+  width:20%;
+  text-align: right;
+}
+
+div.calendar-header nav div.prev {
+  width:20%;
+  text-align: left;
+}
+
+div.calendar-header nav div.title {
+  width: 60%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px
+}
+
+div.calendar-header nav div.title span {
+  display: inline-block;
+  line-height: 35px;
+}
+
+/** calendar month view **/
+
+div.calendar-month-view div.month {
+  margin-top: 20px;
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+div.calendar-month-view div.day-titles {
+  display: table-row;
+}
+
+div.calendar-month-view div.day-title {
+  display: table-cell;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+div.calendar-month-view div.week {
+  display: table-row;
+  height: 70px;
+}
+
+div.calendar-month-view div.day {
+  display: table-cell;
+  border: solid 1px #025898;
+  width: 14.2%;
+  position: relative;
+  padding: 0px;
+  min-height: 120px;
+  background-color: #023f6d;
+}
+
+div.calendar-month-view div.day span.day-of-month {
+  position: absolute;
+  display:block;
+  height: 20px;
+  width:20px;
+  top: 4px;
+  text-align: center;
+  line-height: 20px;
+  right: 4px;
+  color: #fff;
+  background-color: #0471c5;
+  border-radius: 10px;
+  font-weight: 300px;
+  font-size: 14px;
+}
+
+div.calendar-month-view div.day.not-in-current-month {
+  background-color: #012c4c
+}
+
+div.calendar-month-view div.day.not-in-current-month span.day-of-month {
+  background-color: #0471c5;
+  color: #ccc;
+}
+
+div.calendar-month-view div.day a {
+  display:block;
+  width: 100%;
+  min-height: 120px;
+}
+
+div.calendar-month-view div.day a:hover {
+  background-color: #025898;
+}
+
+div.calendar-month-view div.day:hover span.day-of-month {
+  background-color: #0090ff;
+}
+
+div.calendar-month-view div.day img {
+  max-width: 100%;
+  max-height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** calendar week view **/
+
+div.calendar-week-view ul.week-view-week {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+div.calendar-week-view ul.week-view-week li.day {
+  width: 100%;
+  padding: 5px 0;
+}
+
+div.calendar-week-view a.week-day {
+  display:block;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  border:1px solid #999;
+  background-color: #fcfcfc;
+}
+
+div.calendar-week-view a.week-day:hover {
+  background-color: #eee;
+  border-color: #333;
+}
+
+div.calendar-week-view a.week-day h2 {
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+div.calendar-week-view a.week-day ul.movies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.calendar-week-view a.week-day ul.movies li {
+  display: inline-block;
+  padding:0 5px;
+  vertical-align: middle;
+}
+
+div.calendar-day-view ul.day-view-movie-list li h2 {
+  margin-top: 0px;
+}
+
+div.calendar-day-view ul.day-view-movie-list li p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/** calendar day view **/
+
+div.calendar-day-view ul.day-view-movie-list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+
+div.calendar-day-view ul.day-view-movie-list li {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+div.calendar-day-view ul.day-view-movie-list li div.poster {
+  float: left;
+  width: 200px;
+}
+
+div.calendar-day-view ul.day-view-movie-list li div.poster div.no-image {
+  width: 154px;
+  height: 231px;
+  color: white;
+  background: #5b7990;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 40px
+}
+
+div.calendar-day-view ul.day-view-movie-list li div.details {
+  margin-left: 200px;
+  max-width: 600px;
+}
+
+div.calendar-day-view ul.day-view-movie-list li div.view-movie {
+  position: absolute;
+  top:15px;
+  right:0px;
+  text-align:right;
+}
+
+div.calendar-day-view p.no-movies{
+  text-align: center;
+  font-size:20px;
+  color: #cc6666;
+
+}
+
+/** footer **/
+
+footer#main-footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+}
+
+footer#main-footer ul a {
+  color: white;
+}
+
+ul.footer-text {
+  text-align: right;
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul.footer-text li {
+  line-height: 25px;
+}
