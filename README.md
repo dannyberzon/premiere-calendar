@@ -4,7 +4,7 @@ This is a simple HTML / CSS / Javascript web app that retrieves movie data from 
 
 A demo of the application is below.
 
-http://premiere.berzon.io/
+http://premiere.vanberzon.com/
 
 ## Technologies
 The following javascript libraries are used:
